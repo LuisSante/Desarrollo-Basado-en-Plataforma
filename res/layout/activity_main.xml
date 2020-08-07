@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="codigo del producto"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/txt_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="descripcion del producto"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txt_codigo"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <EditText
+        android:id="@+id/txt_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="precio del producto"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descripcion"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <Button
+        android:id="@+id/boton_registar"
+        android:layout_width="203dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:onClick="Registrar"
+        android:text="Registrar"
+        app:layout_constraintTop_toBottomOf="@+id/txt_precio"
+        tools:layout_editor_absoluteX="104dp" />
+
+    <Button
+        android:id="@+id/BotonBuscar"
+        android:layout_width="201dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:onClick="Buscar"
+        android:text="Buscar Producto"
+        app:layout_constraintTop_toBottomOf="@+id/boton_registar"
+        tools:layout_editor_absoluteX="106dp" />
+
+    <Button
+        android:id="@+id/BotonEliminar"
+        android:layout_width="199dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:onClick="Eliminar"
+        android:text="Eliminar"
+        app:layout_constraintTop_toBottomOf="@+id/BotonBuscar"
+        tools:layout_editor_absoluteX="111dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
